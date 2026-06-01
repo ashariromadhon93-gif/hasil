@@ -1,0 +1,408 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan SMP Negeri 5 Satu Atap Karangmoncol 2026</title>
+    <style>
+        /* Pengaturan Dasar & Background 3D Biru Hitam Elegan */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            height: 100%;
+            background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 60%, #020617 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            color: #F5EE27;
+        }
+
+        /* Efek Ornamen 3D di Background */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), transparent);
+            filter: blur(80px);
+            z-index: -1;
+        }
+        body::before { width: 400px; height: 400px; top: 10%; left: -10%; }
+        body::after { width: 500px; height: 500px; bottom: -10%; right: -10%; }
+
+        /* Bagian Atas / Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 5px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.05) translateZ(10px);
+        }
+
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .judul-tengah {
+            text-align: center;
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+
+        .judul-tengah h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #3b82f6, #93c5fd, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Bagian Konten Utama / Tempat Slide */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px; /* Membuat efek kedalaman 3D */
+            padding: 20px;
+        }
+
+        /* Desain Kartu Slide 3D (Glassmorphism) */
+        .slide-card {
+            background: rgba(30, 41, 59, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 
+                        inset 0 1px 0 rgba(255,255,255,0.2);
+            text-align: center;
+            transform: rotateX(5deg);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-sizing: border-box;
+        }
+
+        /* Gaya Form Input */
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #93c5fd;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            background: rgba(15, 23, 42, 0.8);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Desain Tombol Utama (Bawah Tengah Kartu) */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(29, 78, 216, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(29, 78, 216, 0.6);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        /* Pesan Error */
+        #pesan-error {
+            color: #f87171;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            display: none;
+        }
+
+        /* SLIDE 2: Tampilan Lulus */
+        #slide2 {
+            display: none;
+        }
+
+        .teks-lulus {
+            font-size: 64px;
+            font-weight: 900;
+            color: #4ade80;
+            margin: 20px 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 0 25px rgba(74, 222, 128, 0.6);
+            animation: pulse 2s infinite alternate;
+        }
+
+        #nama-siswa-lulus {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        #nisn-siswa-lulus {
+            font-size: 16px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .btn-kembali {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+            box-shadow: 0 8px 20px rgba(71, 85, 105, 0.4);
+        }
+        .btn-kembali:hover {
+            background: linear-gradient(135deg, #78889b 0%, #5a6a80 100%);
+        }
+
+        /* Bagian Bawah / Teks Berjalan Pelan */
+        footer {
+            background-color: #020617;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px 0;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .marquee-text {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #F5E727;
+            letter-spacing: 1px;
+            animation: jalan-pelan 28s linear infinite;
+        }
+
+        @keyframes jalan-pelan {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        /* Responsif untuk Smartphone */
+        @media (max-width: 680px) {
+            header { padding: 15px; }
+            .judul-tengah h1 { font-size: 18px; }
+            .logo-container { width: 55px; height: 55px; }
+            .slide-card { padding: 25px; }
+            .teks-lulus { font-size: 48px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container" title="Logo Pemkab Purbalingga">
+            <img src="logopbg.png" alt="Logo Purbalingga" class="logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Coat_of_arms_of_Purbalingga_Regency.svg/1200px-Coat_of_arms_of_Purbalingga_Regency.svg.png'">
+        </div>
+        
+        <div class="judul-tengah">
+            <h1>Pengumuman Kelulusan Siswa IX</h1>
+     
+        </div>
+
+        <div class="logo-container" title="Logo Sekolah">
+            <img src="logosmp.png" alt="Logo Sekolah" class="logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/5310/5310672.png'">
+        </div>
+    </header>
+
+    <main>
+        <div id="slide1" class="slide-card">
+            <div class="form-group">
+                <label for="nama">MASUKKAN NAMA LENGKAP</label>
+                <input type="text" id="nama" placeholder="Contoh: ASHARI ROMADHON" autocomplete="off" onfocus="suaraInput('nama')">
+            </div>
+            <div class="form-group">
+                <label for="nisn">MASUKKAN NISN</label>
+                <input type="text" id="nisn" placeholder="Contoh: 0113292340" autocomplete="off" onfocus="suaraInput('nisn')">
+            </div>
+            <div class="btn-container">
+                <button onclick="cekKelulusan()">HASIL</button>
+            </div>
+            <div id="pesan-error">Data tidak ditemukan! Silakan periksa kembali Nama dan NISN Anda.</div>
+        </div>
+
+        <div id="slide2" class="slide-card">
+            <h3 id="nama-siswa-lulus">NAMA SISWA</h3>
+            <div id="nisn-siswa-lulus">NISN SISWA</div>
+            <p style="margin:0; color: #50F527; font-weight: 500;">Dinyatakan:</p>
+            <div class="teks-lulus">LULUS</div>
+            <div class="btn-container">
+                <button class="btn-kembali" onclick="kembaliKeSlide1()">Kembali</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="marquee-text">
+            Website dibuat oleh : SMP Negeri 5 Satu Atap Karangmoncol (Tahun Pelajaran 2025/2026)
+        </div>
+    </footer>
+
+    <script>
+        // Database Siswa Resmi berdasarkan lampiran file gambar Anda
+        const dataSiswa = [
+            { nama: "AGIL HALAT ZAM ZAMI", nisn: "0113292344" },
+            { nama: "ALFIN ARDIANSAH", nisn: "0106145157" },
+            { nama: "ALFINO ADRI ANSAH", nisn: "0118779454" },
+            { nama: "ANGGIH SETIAWAN", nisn: "0111481319" },
+            { nama: "ANGGIT MAULIDIA", nisn: "0116364035" },
+            { nama: "DEANITA", nisn: "0116187439" },
+            { nama: "DEVITA SARI", nisn: "0112095075" },
+            { nama: "ELSA MUALIFAH", nisn: "0114667419" },
+            { nama: "ERIK SETIYAWAN", nisn: "0105640612" },
+            { nama: "FEBRI KURNIA SARI", nisn: "0118372347" },
+            { nama: "FIRMANSYAH", nisn: "0102912552" },
+            { nama: "KAFA AFRIANSAH PRATAMA", nisn: "0103993234" },
+            { nama: "LAORI RETNASARI", nisn: "0102573551" },
+            { nama: "ROMANSYAH", nisn: "0108579357" },
+            { nama: "TANIA SARI", nisn: "0113158079" },
+            { nama: "WIHDA JULIYANI", nisn: "0116552393" },
+            { nama: "WIWIN DINA SAPUTRI", nisn: "0116640723" }
+        ];
+
+        // Fungsi utama pengeluaran suara otomatis (Text-to-Speech)
+        function bicara(teks) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); // Menghentikan suara sebelumnya agar tidak bertumpuk
+                const utterance = new SpeechSynthesisUtterance(teks);
+                utterance.lang = 'id-ID'; // Mengatur ke Bahasa Indonesia
+                utterance.rate = 0.9;     // Kecepatan bicara normal sedikit santai
+                utterance.pitch = 1.0;    // Nada suara normal
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Suara bantuan saat kolom input ditekan (focus)
+        function suaraInput(tipe) {
+            if (tipe === 'nama') {
+                bicara("Silakan masukkan nama lengkap Anda");
+            } else if (tipe === 'nisn') {
+                bicara("Silakan masukkan nomor i s n Anda");
+            }
+        }
+
+        // Validasi Kelulusan
+        function cekKelulusan() {
+            const inputNama = document.getElementById("nama").value.trim().toUpperCase();
+            const inputNisn = document.getElementById("nisn").value.trim();
+            const pesanError = document.getElementById("pesan-error");
+
+            if (inputNama === "" || inputNisn === "") {
+                pesanError.innerText = "Nama dan NISN wajib diisi!";
+                pesanError.style.display = "block";
+                bicara("Nama dan Nomor i s n wajib diisi");
+                return;
+            }
+
+            // Mencari kecocokan data dari daftar gambar
+            const siswaValid = dataSiswa.find(s => s.nama === inputNama && s.nisn === inputNisn);
+
+            if (siswaValid) {
+                pesanError.style.display = "none";
+                
+                // Set data ke slide 2
+                document.getElementById("nama-siswa-lulus").innerText = siswaValid.nama;
+                document.getElementById("nisn-siswa-lulus").innerText = "NISN: " + siswaValid.nisn;
+                
+                // Berpindah ke Slide 2
+                document.getElementById("slide1").style.display = "none";
+                document.getElementById("slide2").style.display = "block";
+                
+                // Mengeluarkan suara kelulusan resmi
+                setTimeout(() => {
+                    bicara("Selamat! " + siswaValid.nama + ", Anda dinyatakan... LULUS!jangan lupa bersyukur kepada Tuhan yang maha esa");
+                }, 300);
+
+            } else {
+                pesanError.innerText = "Data tidak cocok! Periksa kembali ejaan nama dan NISN Anda.";
+                pesanError.style.display = "block";
+                bicara("Maaf, data tidak ditemukan. Silakan periksa kembali.");
+            }
+        }
+
+        // Kembali ke Slide 1
+        function kembaliKeSlide1() {
+            document.getElementById("nama").value = "";
+            document.getElementById("nisn").value = "";
+            document.getElementById("slide2").style.display = "none";
+            document.getElementById("slide1").style.display = "block";
+            bicara("Silakan masukkan data Anda kembali");
+        }
+    </script>
+</body>
+</html>
